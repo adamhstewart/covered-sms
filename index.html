@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Covered: Shift Text Consent</title>
+<style>
+  :root {
+    --ink: #0f172a;
+    --muted: #475569;
+    --rule: #94a3b8;
+    --box: #f1f5f9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #ffffff;
+    color: var(--ink);
+    font: 15px/1.5 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .page {
+    max-width: 7.5in;
+    margin: 0 auto;
+    padding: 0.6in 0.5in;
+  }
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 12px; margin-bottom: 20px; }
+  h1 { margin: 0 0 4px; font-size: 24px; }
+  .sub { margin: 0; color: var(--muted); }
+  h2 { font-size: 15px; margin: 22px 0 8px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+  .consent {
+    background: var(--box);
+    border-left: 4px solid var(--ink);
+    padding: 14px 16px;
+    margin: 0;
+  }
+  ul { margin: 6px 0 0; padding-left: 20px; }
+  li { margin: 3px 0; }
+  .fields { display: grid; grid-template-columns: 1fr 1fr; gap: 26px 28px; margin-top: 10px; }
+  .field { border-bottom: 1px solid var(--rule); height: 34px; position: relative; }
+  .field span {
+    position: absolute; bottom: -20px; left: 0;
+    font-size: 12px; color: var(--muted);
+  }
+  .wide { grid-column: 1 / -1; }
+  .check { display: flex; gap: 10px; align-items: flex-start; margin-top: 18px; }
+  .box { flex: 0 0 18px; height: 18px; border: 1.5px solid var(--ink); margin-top: 2px; }
+  footer { margin-top: 44px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 12px; color: var(--muted); }
+  .fill { background: #fef3c7; padding: 0 3px; }
+  @media print {
+    .page { padding: 0.4in 0.3in; }
+    .fill { background: none; }
+    .screen-note { display: none; }
+  }
+  .screen-note {
+    background: #fef3c7; border: 1px solid #fcd34d; padding: 10px 12px;
+    font-size: 13px; margin-bottom: 18px; border-radius: 6px;
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+
+  <header>
+    <h1>Shift Text Message Consent</h1>
+    <p class="sub">Covered is a scheduling assistant, operated by Gizra, that restaurants use to coordinate work shifts by text message.</p>
+  </header>
+
+  <h2>What you're agreeing to</h2>
+  <p class="consent">
+    I agree to receive text messages from Covered about my work shifts, including open-shift offers
+    and my schedule, on behalf of the restaurant I work for. Message frequency varies.
+    Message and data rates may apply. Reply <strong>STOP</strong> to opt out, <strong>HELP</strong> for help.
+  </p>
+
+  <h2>What you'll get</h2>
+  <ul>
+    <li>Offers of open shifts you can take by replying <strong>YES</strong></li>
+    <li>Your schedule when it's published each week</li>
+    <li>Notices when you're covering a coworker's shift</li>
+    <li>Replies when you text Covered, for example to call in sick or ask for time off</li>
+  </ul>
+  <p>
+    Texts are about your shifts only, never marketing. Your number is used only for scheduling at
+    the restaurant you work for, and is never sold or shared.
+    Agreeing is not a condition of employment. You can opt out any time by replying <strong>STOP</strong>.
+  </p>
+
+  <h2>Your details</h2>
+  <div class="fields">
+    <div class="field"><span>Full name</span></div>
+    <div class="field"><span>Mobile number</span></div>
+    <div class="field"><span>Signature</span></div>
+    <div class="field"><span>Date</span></div>
+  </div>
+
+  <div class="check">
+    <div class="box"></div>
+    <div>I agree to receive shift text messages from Covered as described above.</div>
+  </div>
+
+  <footer>
+    Questions or help: <a href="mailto:info@gizra.com">info@gizra.com</a>.
+    Privacy policy: <a href="privacy.html">privacy.html</a>.
+    Reply STOP to any message to opt out, or HELP for help.
+  </footer>
+
+</main>
+</body>
+</html>
